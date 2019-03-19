@@ -9,17 +9,19 @@ function buildMetadata(sample) {
   d3.json(metadata_url).then(function(response) {
     console.log(response);
     // Use d3 to select the panel with id of `#sample-metadata`
-    // add ul to hold metadata
-    var panel = d3.select('#sample-metadata').append('ul');
+    var panel = d3.select('#sample-metadata');
 
     // Use `.html("") to clear any existing metadata
     panel.html('');
+
+    // add ul to hold metadata
+    var list = panel.append('ul');
 
      // Use `Object.entries` to add each key and value pair to the panel
      Object.entries(response).forEach(([key, value]) => {
        console.log(key, value);
       // add html
-      panel.append('li').text(`${key}: ${value}`);
+      list.append('li').text(`${key}: ${value}`);
        });
   });
     
