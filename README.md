@@ -20,8 +20,7 @@ Using flask, information about individual samples are accessed in json format, u
 ### Visualizations using plotly and d3
 
 Each sample is chosen using a drop-down menu, with the metadata displayed in a table.
-![Table](images/table_sample.png)
-
+<img src="images/table_sample.png" width="250">
 
 #### Pie Chart
 ![Pie Chart](images/pie_sample.png)
