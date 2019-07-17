@@ -11,8 +11,8 @@ Two datasets:
 * sample metadata: data about the student from whom the sample was taken
 
 Using flask, information about individual samples are accessed in json format, using /samples/<sample> and /metadata/<sample>
-https://dry-island-96930.herokuapp.com/samples/940
-https://dry-island-96930.herokuapp.com/metadata/940
+  * https://dry-island-96930.herokuapp.com/samples/940
+  * https://dry-island-96930.herokuapp.com/metadata/940
 
 ### Visualizations using plotly and d3
 
